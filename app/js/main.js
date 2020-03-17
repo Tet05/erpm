@@ -63,7 +63,7 @@ $( document ).ready( function () {
   //  slider parnters
   $( ".partners__slider" ).slick( {
     slidesToScroll: 1,
-    slidesToShow: 1,
+    slidesToShow: 2,
     arrows: false,
     dots: true,
     vertical: true,
