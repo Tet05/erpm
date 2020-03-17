@@ -260,7 +260,7 @@ body {
   margin-right: 60px;
 }
 
-.header__social-icons a + a {
+.header__social-icons a+a {
   margin-left: 28px;
 }
 
@@ -414,7 +414,7 @@ body {
   margin-right: 60px;
 }
 
-.menu__social-icons a + a {
+.menu__social-icons a+a {
   margin-left: 28px;
 }
 
@@ -473,7 +473,7 @@ body {
   position: relative;
 }
 
-.about__categories-border > img {
+.about__categories-border>img {
   z-index: 100;
   position: absolute;
   left: -4px;
@@ -483,7 +483,8 @@ body {
 .categories-border {
   margin-top: 44px;
 }
-/* 
+
+/*
 .about__categories {
   margin-bottom: 26px;
 } */
@@ -535,19 +536,23 @@ body {
 #active__count {
   top: 300px;
 }
+
 #experience__count {
   top: 500px;
 }
+
 .fadeInUp {
   animation-duration: 6s;
   animation-name: fadeInUp;
   animation-iteration-count: 1;
 }
+
 .zoomIn {
   animation-duration: 2s;
   animation-name: zoomIn;
   animation-iteration-count: 1;
 }
+
 @keyframes fadeInUp {
   from {
     margin-top: 100%;
@@ -557,6 +562,7 @@ body {
     margin-top: 0%;
   }
 }
+
 .project__inner-subtitle {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.6);
@@ -610,9 +616,11 @@ body {
   width: 8px;
   height: 8px;
 }
+
 .slick-dots li button:before {
   font-size: 0px;
 }
+
 .slick-dots .slick-active {
   right: 4px;
 }
@@ -624,27 +632,30 @@ body {
   border-radius: 50%;
   background-color: #fff;
 }
+
 .slider__about .slick-slide {
   display: flex;
   min-height: 740px;
   margin-bottom: 50px;
 }
+
 .slider__about .slick-slide {
   height: 740px;
 }
+
 /* end about slider */
 /* ===== end about info */
 /* =======================   end about.html  ============ */
 /* =======================   start our-clients  ============ */
+.clients__inner-body {
+  position: relative;
+}
+
 .clients__slider {
   margin-bottom: 75px;
   margin-top: 30px;
   margin-left: 120px;
   margin-right: 60px;
-}
-
-.clients__inner-info {
-  display: none;
 }
 
 .clients__inner-item {
@@ -659,10 +670,66 @@ body {
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.06);
 }
 
+.clients__inner-info {
+  display: none;
+}
+
+.clients__inner-item:hover {
+  padding: 50px 61px;
+}
+
+.clients__inner-item .client-hover {
+  display: none;
+}
+
+.clients__inner-item:hover img {
+  display: none;
+}
+
+.clients__inner-item:hover .client-hover {
+  margin-bottom: 10px;
+  display: block;
+
+}
+
+.clients__inner-item:hover {
+  display: block;
+  background: linear-gradient(#0461ff, #0345d0);
+}
+
+.clients__inner-item:hover .clients__inner-info {
+  display: block;
+
+}
+
+.clients__info-title {
+  font-family: "San Francisco Pro Display Regular";
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  line-height: 26px;
+  width: 277px;
+  margin-left: -35px;
+  margin-bottom: 13px;
+}
+
+.clients__info-text {
+  font-family: "San Francisco Pro Display Regular";
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  width: 277px;
+  margin-left: -35px;
+}
+
+
 /* start slider our-clients  */
+
 .clients__slider .slick-slide {
   display: flex;
 }
+
 .clients__slider .slick-dots {
   position: absolute;
   bottom: -25px;
@@ -674,7 +741,7 @@ body {
   text-align: center;
   width: 16px;
   height: 50px;
-  right: 0;
+  right: -95%;
   top: 50%;
 }
 
@@ -685,9 +752,11 @@ body {
   width: 8px;
   height: 8px;
 }
+
 .slick-dots li button:before {
   font-size: 0px;
 }
+
 .slick-dots .slick-active {
   right: 4px;
 }
@@ -699,6 +768,7 @@ body {
   border-radius: 50%;
   background-color: #fff;
 }
+
 /* end slider our-clients  */
 /* =======================   end our-clients  ============ */
 
