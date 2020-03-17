@@ -73,6 +73,10 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  padding-left: 20px;
+}
+
 /* end global settings */
 /* start fonts*/
 /* start fonts San Francisco Pro Display  */
@@ -651,6 +655,7 @@ body {
   position: relative;
 }
 
+
 .clients__slider {
   margin-bottom: 75px;
   margin-top: 30px;
@@ -674,8 +679,31 @@ body {
   display: none;
 }
 
+.clients-fadeInUp {
+  animation-duration: 2s;
+  animation-name: clients-fadeInUp;
+  animation-iteration-count: 1;
+}
+
+@keyframes clients-fadeInUp {
+  from {
+    margin-top: 10%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0%;
+    transform: translateY(0%);
+  }
+}
+
 .clients__inner-item:hover {
-  padding: 50px 61px;
+  padding: 30px 61px 10px;
 }
 
 .clients__inner-item .client-hover {
