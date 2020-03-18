@@ -71,6 +71,7 @@ $( document ).ready( function () {
     asNavFor: '.partners__slider-photo',
     focusOnSelect: true,
     centerMode: false,
+
     responsive: [
       {
         breakpoint: 992,
@@ -103,7 +104,71 @@ $( document ).ready( function () {
     infinite: true,
     asNavFor: '.partners__slider'
   } );
+  //  slider business
+  $( ".business__slider" ).slick( {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    vertical: true,
+    verticalSwiping: true,
+    asNavFor: '.business__slider-bottom',
+    focusOnSelect: true,
+    centerMode: false,
+    infinite: true,
+    draggable: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+          infinite: true,
+          centerMode: false,
+          vertical: false,
+        }
+      },
+      {
+        breakpoint: 510,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+          infinite: true,
+          centerMode: false,
+          vertical: false,
+        }
+      }
+
+    ]
+  } );
+  $( '.business__slider-bottom' ).slick( {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    vertical: true,
+    verticalSwiping: true,
+    asNavFor: '.business__slider'
+  } );
 
 
 } );
 
+// const slider = $( ".business__slider, .business__slider-bottom" );
+// slider
+//   .slick( {
+//     dots: true,
+//     vertical: true,
+//     verticalSwiping: true
+
+//   } );
+
+// slider.on( 'wheel', ( function ( e ) {
+//   e.preventDefault();
+
+//   if ( e.originalEvent.deltaY < 0 ) {
+//     $( this ).slick( 'slickNext' );
+//   } else {
+//     $( this ).slick( 'slickPrev' );
+//   }
+// } ) );

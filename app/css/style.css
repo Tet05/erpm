@@ -1118,6 +1118,32 @@ form .btn {
   margin: 5px;
 }
 /* =======================   end contact us ============ */
+/* =======================  start business============ */
+.business__inner-top {
+  max-width: 950px;
+}
+.business__categories-item {
+  width: 313px;
+  padding: 110px 10px 28px 30px;
+  text-align: center;
+  display: block;
+}
+.business__inner-title {
+  font-size: 24px;
+
+  padding-left: 10px;
+}
+.business__slider-subbottom .slick-slide .slick-current {
+  width: 1580px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 998;
+  opacity: 0.9;
+  transition: opacity 500ms ease 3s;
+}
+
+/* =======================  end business============ */
 
 /* media 1670px */
 @media (max-width: 1670px) {
