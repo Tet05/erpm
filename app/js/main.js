@@ -103,5 +103,7 @@ $( document ).ready( function () {
     infinite: true,
     asNavFor: '.partners__slider'
   } );
+
+
 } );
 
